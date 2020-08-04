@@ -1,0 +1,55 @@
+// CSS Grid layout
+
+// wrap
+#wrap {
+  position:relative;
+}
+
+// contents
+#contents {  
+
+  // mobile
+  @include mediaQuery($deviceSmall){
+    
+  }
+
+}
+
+// container
+.container {
+  position:relative;
+  width:1260px;
+  margin:0 auto;
+  // mobile
+  @include mediaQuery($deviceSmall){
+    width:100%;
+  }
+}
+
+.dim {
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:rgba(0,0,0,0.7);
+  z-index: 10;
+  #wrap.active & {
+    display:block;
+  }
+}
+
+.only-pc {
+  // mobile
+  @include mediaQuery($deviceSmall){
+    display:none !important;
+  }
+}
+.only-m {
+  display:none !important;
+  // mobile
+  @include mediaQuery($deviceSmall){
+    display:block !important;
+  }
+}

@@ -1,0 +1,47 @@
+// page header
+header {
+  height:90px;
+  background-color:#fff;
+  a {
+    display:block;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:contain;
+    @include fontNone;
+    @include transitionAll;
+  }
+  h1 {
+    position:absolute;
+    top:30px;
+    left:0;
+    z-index: 2;
+    @include transitionAll;
+    a {
+      > * {
+        display:inline-block;
+        vertical-align: middle;
+      }
+      strong {        
+        width:107px;
+        height:23px;
+        background-image:url("../images/logo.svg");
+      }
+      span {
+        height:24px;
+        line-height:26px;
+        margin-left:6px;
+        padding:0 8px;
+        color:#fff;
+        font-size:16px;
+        font-weight:400;
+        background-color:#6b4bfb;
+        border-radius: 11px;
+      }
+    }
+  }
+
+  // mobile
+  @include mediaQuery($deviceSmall){
+    
+  }
+}
