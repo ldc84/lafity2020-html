@@ -1,4 +1,4 @@
-# ENCORE SEOUL 2020
+# LAFITY 2020 HTML 
 This provides an example Gulp.js project which automates CSS tasks including:
 
 * optimizing images
@@ -17,13 +17,13 @@ This provides an example Gulp.js project which automates CSS tasks including:
 To install on any Linux, Mac OS or Windows system, ensure [Node.js](https://nodejs.org/) is installed then clone the repository:
 
 ```bash
-git clone https://github.com/ldc84/encoreseoul2020.git
+git clone https://github.com/ldc84/lafity2020-html.git
 ```
 
 Navigate to the folder:
 
 ```bash
-cd encoreseoul2020
+cd lafity2020-html
 ```
 
 Install dependencies:
@@ -45,4 +45,4 @@ gulp
 
 Navigate to `http://localhost:9090/` or the `External` URL if accessing from another device. Further instructions are shown on the index page.
 
-[https://www.encoreseoul.org/](https://www.encoreseoul.org/)
+[http://lafity.live](http://lafity.live/)
