@@ -290,72 +290,93 @@ legend,
       display: block !important; } }
 
 header {
-  height: 90px;
+  height: 84px;
   background-color: #fff; }
-  header a {
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    font-size: 0;
-    line-height: 0;
-    text-indent: -9999em;
-    transition: all .3s ease-in-out; }
   header h1 {
     position: absolute;
     top: 30px;
     left: 0;
     z-index: 2;
     transition: all .3s ease-in-out; }
-    header h1 a > * {
+    header h1 a {
+      display: block;
+      font-size: 0;
+      line-height: 0;
+      text-indent: -9999em; }
+      header h1 a > * {
+        display: inline-block;
+        vertical-align: middle; }
+      header h1 a strong {
+        width: 107px;
+        height: 23px;
+        background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDciIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAxMDcgMjMiPgogICAgPHBhdGggZmlsbD0iIzE4MTgxOCIgZD0iTTE0LjQ3IDIzdi00LjI4Mkg0LjRWMEgwdjIzaDE0LjQ3em02LjAyNSAwbDEuODgtNS4yNTVoOS4xOEwzMy40MzUgMjNoNC43ODJMMjkuNjEgMGgtNS4xbC04LjY3IDIzaDQuNjU0em05LjU5NC05LjM0M2gtNi4yNDdsMy4xMjMtOC42OTQgMy4xMjQgOC42OTR6TTQ1LjU0OCAyM3YtOC45NTNoOC43NjV2LTQuMTJoLTguNzk3VjQuMjVoOS44OFYwSDQxLjExN3YyM2g0LjQzem0xNy45NDQgMFYwSDU5LjAzdjIzaDQuNDYyem0xNC42NjIgMFY0LjI1aDcuMTRWMGgtMTguNzF2NC4yNWg3LjE0VjIzaDQuNDN6bTIwLjg3OCAwdi05LjY2N0wxMDcgMGgtNC45NGwtNS4wNjggOS4xMTZMOTEuOTI0IDBIODYuNzZsNy44NzMgMTMuMzMzVjIzaDQuMzk5eiIvPgo8L3N2Zz4K) no-repeat center center;
+        background-size: cover; }
+      header h1 a span {
+        height: 24px;
+        line-height: 26px;
+        margin-left: 6px;
+        padding: 0 8px;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 400;
+        background-color: #6b4bfb;
+        border-radius: 11px; }
+  header .top-utill {
+    padding: 28px 0 0 0;
+    text-align: right; }
+    header .top-utill > li {
       display: inline-block;
-      vertical-align: middle; }
-    header h1 a strong {
-      width: 107px;
-      height: 23px;
-      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDciIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAxMDcgMjMiPgogICAgPHBhdGggZmlsbD0iIzE4MTgxOCIgZD0iTTE0LjQ3IDIzdi00LjI4Mkg0LjRWMEgwdjIzaDE0LjQ3em02LjAyNSAwbDEuODgtNS4yNTVoOS4xOEwzMy40MzUgMjNoNC43ODJMMjkuNjEgMGgtNS4xbC04LjY3IDIzaDQuNjU0em05LjU5NC05LjM0M2gtNi4yNDdsMy4xMjMtOC42OTQgMy4xMjQgOC42OTR6TTQ1LjU0OCAyM3YtOC45NTNoOC43NjV2LTQuMTJoLTguNzk3VjQuMjVoOS44OFYwSDQxLjExN3YyM2g0LjQzem0xNy45NDQgMFYwSDU5LjAzdjIzaDQuNDYyem0xNC42NjIgMFY0LjI1aDcuMTRWMGgtMTguNzF2NC4yNWg3LjE0VjIzaDQuNDN6bTIwLjg3OCAwdi05LjY2N0wxMDcgMGgtNC45NGwtNS4wNjggOS4xMTZMOTEuOTI0IDBIODYuNzZsNy44NzMgMTMuMzMzVjIzaDQuMzk5eiIvPgo8L3N2Zz4K); }
-    header h1 a span {
-      height: 24px;
-      line-height: 26px;
-      margin-left: 6px;
-      padding: 0 8px;
-      color: #fff;
-      font-size: 16px;
-      font-weight: 400;
-      background-color: #6b4bfb;
-      border-radius: 11px; }
+      margin: 0 5px; }
+      header .top-utill > li a {
+        display: block;
+        padding: 0 8px;
+        color: #181818;
+        font-size: 1rem;
+        line-height: 28px; }
 
 footer {
   height: 390px;
-  padding: 70px 0 0 0;
+  padding: 72px 0 0 0;
+  color: #fff;
   background-color: #222529; }
-  footer .container > div {
-    color: #474747;
-    font-size: 1.063rem;
-    font-weight: 500;
-    line-height: 26px; }
-    footer .container > div + div {
-      margin-top: 20px; }
-    footer .container > div a:link,
-    footer .container > div a:visited,
-    footer .container > div address {
-      display: inline;
-      color: #474747;
-      font-size: 1.063rem;
-      font-style: normal; }
-    footer .container > div span + address {
-      position: relative;
-      margin-left: 3px;
-      padding-left: 8px; }
-      footer .container > div span + address:before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 7px;
-        left: 0;
-        width: 1px;
-        height: 15px;
-        background-color: #474747; }
+  footer .foot-logo {
+    width: 107px;
+    height: 23px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDgiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAxMDggMjMiPgogICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTE1LjEyIDIzdi00LjIyNEg1LjAwOFYuMzEySC41OTJWMjNIMTUuMTJ6bTYuMDQ4IDBsMS44ODgtNS4xODRoOS4yMTZMMzQuMTYgMjNoNC44TDMwLjMyLjMxMkgyNS4yTDE2LjQ5NiAyM2g0LjY3MnptOS42MzItOS4yMTZoLTYuMjcybDMuMTM2LTguNTc2IDMuMTM2IDguNTc2ek00Ni4zMiAyM3YtOC44MzJoOC44di00LjA2NGgtOC44MzJ2LTUuNmg5LjkyVi4zMTJINDEuODcyVjIzaDQuNDQ4em0xOC4wMTYgMFYuMzEyaC00LjQ4VjIzaDQuNDh6bTE0LjcyIDBWNC41MDRoNy4xNjhWLjMxMkg2Ny40NHY0LjE5Mmg3LjE2OFYyM2g0LjQ0OHptMjAuOTYgMHYtOS41MzZsOC0xMy4xNTJoLTQuOTZsLTUuMDg4IDguOTkyTDkyLjg4LjMxMmgtNS4xODRMOTUuNiAxMy40NjRWMjNoNC40MTZ6Ii8+Cjwvc3ZnPgo=) no-repeat center center;
+    background-size: cover;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999em; }
+  footer .foot-text-1 {
+    margin-top: 50px; }
+    footer .foot-text-1 p,
+    footer .foot-text-1 address {
+      display: block;
+      margin-top: 7px;
+      font-style: normal;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.1; }
+  footer .foot-utill {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 50%; }
+    footer .foot-utill > li {
+      width: 193px; }
+      footer .foot-utill > li .tit {
+        font-size: 1rem;
+        font-weight: 700; }
+      footer .foot-utill > li ul {
+        padding-top: 12px; }
+        footer .foot-utill > li ul li {
+          margin-top: 5px; }
+          footer .foot-utill > li ul li a {
+            color: #fff;
+            font-size: 0.875rem;
+            font-weight: 300; }
 
 .layer-gallery {
   position: fixed;
@@ -530,5 +551,8 @@ footer {
             background-color: #ff8b01; }
             .tab-type-1 li a.active:after {
               display: none; } }
+
+#main {
+  padding: 100px 0; }
 
 /*# sourceMappingURL=style.css.map */
