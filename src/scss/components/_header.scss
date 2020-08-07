@@ -1,15 +1,7 @@
 // page header
 header {
-  height:90px;
+  height:84px;
   background-color:#fff;
-  a {
-    display:block;
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-size:contain;
-    @include fontNone;
-    @include transitionAll;
-  }
   h1 {
     position:absolute;
     top:30px;
@@ -17,6 +9,8 @@ header {
     z-index: 2;
     @include transitionAll;
     a {
+      display:block;
+      @include fontNone;
       > * {
         display:inline-block;
         vertical-align: middle;
@@ -24,7 +18,8 @@ header {
       strong {        
         width:107px;
         height:23px;
-        background-image:url("../images/logo.svg");
+        background:url("../images/logo.svg") no-repeat center center;
+        background-size:cover;
       }
       span {
         height:24px;
@@ -32,10 +27,25 @@ header {
         margin-left:6px;
         padding:0 8px;
         color:#fff;
-        font-size:16px;
+        font-size:rem(16);
         font-weight:400;
         background-color:#6b4bfb;
         border-radius: 11px;
+      }
+    }
+  }
+  .top-utill {
+    padding:28px 0 0 0;
+    text-align:right;
+    > li {
+      display:inline-block;
+      margin:0 5px;
+      a {
+        display:block;
+        padding:0 8px;
+        color:#181818;
+        font-size:rem(16);
+        line-height:28px;
       }
     }
   }

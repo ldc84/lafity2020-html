@@ -1,6 +1,8 @@
 // intro
 #main {
 
+  padding:100px 0;
+
   // mobile
   @include mediaQuery($deviceSmall){
     
